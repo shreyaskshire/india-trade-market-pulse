@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>India Trade & Market Pulse</title>
+  <meta
+    name="description"
+    content="A free dashboard for India import-export intelligence, global business updates, and Indian stock market monitoring."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Free, static, hourly refreshed</p>
+        <h1>India Trade &amp; Market Pulse</h1>
+        <p class="hero-text">
+          Track India import-export developments, global business and finance signals, and Indian market movers from one lightweight dashboard.
+        </p>
+        <div class="hero-meta">
+          <span id="refresh-status">Loading latest snapshot...</span>
+          <button id="manual-refresh" type="button">Refresh now</button>
+        </div>
+      </div>
+      <div class="hero-card">
+        <p class="card-label">Coverage</p>
+        <ul class="hero-list">
+          <li>India trade, customs, logistics, export-import news</li>
+          <li>India and global business, macro, commodities, currencies</li>
+          <li>Indian equities focus with scalable top-company watchlist</li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="app" class="dashboard">
+      <section class="summary-grid" id="summary-grid"></section>
+
+      <section class="panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Import / Export</p>
+            <h2>India Trade Intelligence</h2>
+          </div>
+        </div>
+        <div class="panel-grid two-column">
+          <article class="stack-card">
+            <h3>Market Signals</h3>
+            <div id="trade-signals" class="signal-list"></div>
+          </article>
+          <article class="stack-card">
+            <h3>Latest Trade Headlines</h3>
+            <div id="trade-headlines" class="headline-list"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Business / Finance</p>
+            <h2>India &amp; World Business Watch</h2>
+          </div>
+        </div>
+        <div class="panel-grid two-column">
+          <article class="stack-card">
+            <h3>India Business &amp; Finance</h3>
+            <div id="india-business" class="headline-list"></div>
+          </article>
+          <article class="stack-card">
+            <h3>Global Business &amp; Finance</h3>
+            <div id="global-business" class="headline-list"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Indian Stocks</p>
+            <h2>Indian Equities Tracker</h2>
+          </div>
+          <p id="stocks-note" class="section-note"></p>
+        </div>
+        <div class="panel-grid three-column">
+          <article class="stack-card">
+            <h3>Top Gainers</h3>
+            <div id="top-gainers" class="ticker-list"></div>
+          </article>
+          <article class="stack-card">
+            <h3>Top Losers</h3>
+            <div id="top-losers" class="ticker-list"></div>
+          </article>
+          <article class="stack-card">
+            <h3>Most Active Snapshot</h3>
+            <div id="most-active" class="ticker-list"></div>
+          </article>
+        </div>
+        <article class="stack-card table-card">
+          <div class="table-header">
+            <h3>Broader Watchlist</h3>
+            <label class="search-box">
+              <span>Search</span>
+              <input id="ticker-search" type="search" placeholder="Type a company or symbol">
+            </label>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Company</th>
+                  <th>Symbol</th>
+                  <th>Price</th>
+                  <th>Change %</th>
+                  <th>Market Cap</th>
+                  <th>Sector</th>
+                </tr>
+              </thead>
+              <tbody id="watchlist-table"></tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <template id="headline-template">
+    <article class="headline-card">
+      <div class="headline-top">
+        <span class="headline-source"></span>
+        <span class="headline-time"></span>
+      </div>
+      <a class="headline-link" target="_blank" rel="noreferrer">
+        <strong class="headline-title"></strong>
+      </a>
+      <p class="headline-summary"></p>
+      <details class="headline-details">
+        <summary>Read detailed summary</summary>
+        <div class="headline-detail-text"></div>
+        <a class="headline-source-link" target="_blank" rel="noreferrer">Open original article</a>
+      </details>
+    </article>
+  </template>
+
+  <template id="ticker-template">
+    <div class="ticker-card">
+      <div>
+        <strong class="ticker-name"></strong>
+        <span class="ticker-symbol"></span>
+      </div>
+      <div class="ticker-metrics">
+        <span class="ticker-price"></span>
+        <span class="ticker-change"></span>
+      </div>
+    </div>
+  </template>
+
+  <script src="./assets/app.js" defer></script>
+</body>
+</html>
