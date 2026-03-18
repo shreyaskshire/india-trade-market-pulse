@@ -1,0 +1,112 @@
+{
+  "generated_at": "2026-03-18T12:00:00Z",
+  "metrics": {
+    "total_headlines": 12,
+    "stock_symbols_covered": 40
+  },
+  "sections": {
+    "trade_signals": [
+      "India export demand, shipping lanes, and customs policy are clustered into one view.",
+      "Trade stories are ranked from public RSS feeds and refreshed by the hourly snapshot job.",
+      "The setup is ready to scale from the starter stock list toward broader Nifty 500 coverage."
+    ],
+    "trade_news": {
+      "items": [
+        {
+          "source": "Sample feed",
+          "title": "Trade headlines will appear here after the first workflow run.",
+          "link": "https://github.com",
+          "published": "2026-03-18T12:00:00Z",
+          "summary": "The first scheduled refresh will replace this placeholder with the latest trade summary.",
+          "detailed_summary": "The first scheduled refresh will replace this placeholder with the latest trade summary. Once the workflow runs, each article card will include a short overview, a more detailed summary, and a direct link to the original source."
+        }
+      ]
+    },
+    "india_business": {
+      "items": [
+        {
+          "source": "Sample feed",
+          "title": "India business and finance updates will populate here.",
+          "link": "https://github.com",
+          "published": "2026-03-18T12:00:00Z",
+          "summary": "The first scheduled refresh will replace this placeholder with India business summaries.",
+          "detailed_summary": "The first scheduled refresh will replace this placeholder with India business summaries. The dashboard will keep the original source link clickable and will show a longer explanation under each article card."
+        }
+      ]
+    },
+    "global_business": {
+      "items": [
+        {
+          "source": "Sample feed",
+          "title": "Global business and macro coverage will populate here.",
+          "link": "https://github.com",
+          "published": "2026-03-18T12:00:00Z",
+          "summary": "The first scheduled refresh will replace this placeholder with global business summaries.",
+          "detailed_summary": "The first scheduled refresh will replace this placeholder with global business summaries. After the workflow runs, each story will include a readable overview and an expandable detailed summary tied to the original article."
+        }
+      ]
+    },
+    "stocks": {
+      "meta": {
+        "coverage_label": "Starter India watchlist loaded",
+        "note": "The workflow will replace this seeded snapshot with live public-market data."
+      },
+      "top_gainers": [
+        {
+          "name": "Reliance Industries",
+          "symbol": "RELIANCE.NS",
+          "price": 2980,
+          "change_percent": 1.35,
+          "currency": "INR"
+        }
+      ],
+      "top_losers": [
+        {
+          "name": "Wipro",
+          "symbol": "WIPRO.NS",
+          "price": 520,
+          "change_percent": -0.82,
+          "currency": "INR"
+        }
+      ],
+      "most_active": [
+        {
+          "name": "HDFC Bank",
+          "symbol": "HDFCBANK.NS",
+          "price": 1640,
+          "change_percent": 0.21,
+          "currency": "INR"
+        }
+      ],
+      "watchlist": [
+        {
+          "name": "Reliance Industries",
+          "symbol": "RELIANCE.NS",
+          "price": 2980,
+          "change_percent": 1.35,
+          "market_cap": 20100000000000,
+          "sector": "Energy",
+          "currency": "INR"
+        },
+        {
+          "name": "HDFC Bank",
+          "symbol": "HDFCBANK.NS",
+          "price": 1640,
+          "change_percent": 0.21,
+          "market_cap": 12500000000000,
+          "sector": "Banking",
+          "currency": "INR"
+        },
+        {
+          "name": "Wipro",
+          "symbol": "WIPRO.NS",
+          "price": 520,
+          "change_percent": -0.82,
+          "market_cap": 2800000000000,
+          "sector": "Technology",
+          "currency": "INR"
+        }
+      ]
+    }
+  }
+}

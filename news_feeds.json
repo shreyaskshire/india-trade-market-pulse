@@ -1,0 +1,32 @@
+{
+  "trade_news": [
+    {
+      "name": "Google News India Import Export",
+      "url": "https://news.google.com/rss/search?q=India+import+export+when:7d&hl=en-IN&gl=IN&ceid=IN:en"
+    },
+    {
+      "name": "Google News India Trade Policy",
+      "url": "https://news.google.com/rss/search?q=India+trade+policy+customs+ports+logistics+when:7d&hl=en-IN&gl=IN&ceid=IN:en"
+    }
+  ],
+  "india_business": [
+    {
+      "name": "Google News India business finance",
+      "url": "https://news.google.com/rss/search?q=India+business+finance+economy+when:3d&hl=en-IN&gl=IN&ceid=IN:en"
+    },
+    {
+      "name": "Google News Indian stock market",
+      "url": "https://news.google.com/rss/search?q=India+stock+market+NSE+BSE+when:3d&hl=en-IN&gl=IN&ceid=IN:en"
+    }
+  ],
+  "global_business": [
+    {
+      "name": "Google News global business",
+      "url": "https://news.google.com/rss/search?q=global+business+finance+markets+when:3d&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "name": "Google News world trade",
+      "url": "https://news.google.com/rss/search?q=global+trade+supply+chain+shipping+when:3d&hl=en-US&gl=US&ceid=US:en"
+    }
+  ]
+}
